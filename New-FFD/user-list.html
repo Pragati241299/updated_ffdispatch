@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FF Dispatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet' href='https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css'>
+    <link rel='stylesheet' href='https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css'>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+    <body class="sidebar-is-expanded">
+        <header class="l-header">
+            <div class="l-header__inner clearfix">
+                <div class="c-header-icon js-hamburger">
+                    <div class="hamburger-toggle is-opened"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#User" data-toggle="tab">User</a></li>
+                    <li><a href="#Groups" data-toggle="tab">Groups</a></li>
+                    <li><a href="#Categories" data-toggle="tab">Categories</a></li>
+                    <li><a href="#Locations" data-toggle="tab">Locations</a></li>
+                    <li><a href="#Brands" data-toggle="tab">Brands</a></li>
+                </ul>
+                <div class="header-icons-group">
+                    <div class="c-header-icon"><i class="fa fa-cog"></i></div>
+                    <div class="c-header-icon logout mr-3"><img src="img/profile.svg"><span class="ml-2">Logout</span></div>
+                </div>
+            </div>
+        </header>
+        <div class="l-sidebar">
+            <div class="logo">
+                <div class=""><img class="logo__txt" src="img/logo.svg"></div>
+            </div>
+            <div class="l-sidebar__content">
+                <nav class="c-menu js-menu">
+                    <ul class="u-list">
+                        <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Dashboard">
+                            <div class="c-menu__item__inner"><i class="fa fa-home"></i>
+                                <div class="c-menu-item__title"><span>Dashboard</span></div>
+                            </div>
+                        </li>
+
+                        <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Product">
+                            <div class="c-menu__item__inner"><i class="far fa-chart-bar"></i>
+                                <div class="c-menu-item__title"><span>Product</span></div>
+                            </div>
+                        </li>
+                        <li class="c-menu__item has-submenu is-active" data-toggle="tooltip" title="Settings">
+                            <div class="c-menu__item__inner"><i class="fa fa-cog"></i>
+                                <div class="c-menu-item__title"><span>Settings</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+    <main class="l-main">
+        <div class="content-wrapper content-wrapper--with-bg">
+            <div class="tab-content">
+                <div id="User" class="tab-pane fade in active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="user-top-btn">
+                                    <button class="btn-1"><i class="fa fa-user-plus add"></i>New User</button>
+                                    <button class="btn-1 ml-3"><i class="fa fa-user-plus add"></i>Invite an Adviser</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-5">
+                            <div class="col-12">
+                                <table id="example" class="table table-hover responsive nowrap" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>STATUS</th>
+                                            <th>USER</th>
+                                            <th>ROLES</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Active<img class="active-user" src="img/active.png"></td>
+                                            <td>Mark Jonathan</td>
+                                            <td>Marketing</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn-table btn-sm btn-icon" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" ></i>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                        <a class="dropdown-item" href="#"><i class="bx bxs-pencil mr-2"></i> Edit Profile</a>
+                                                        <a class="dropdown-item text-danger" href="#"><i class="bx bxs-trash mr-2"></i> Remove</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Active<img class="active-user" src="img/inactive.png"></td>
+                                            <td>Mark Jonathan</td>
+                                            <td>Marketing</td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <button class="btn-table btn-sm btn-icon" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fa fa-cog" data-toggle="tooltip" data-placement="top" ></i>
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                                        <a class="dropdown-item" href="#"><i class="bx bxs-pencil mr-2"></i> Edit Profile</a>
+                                                        <a class="dropdown-item text-danger" href="#"><i class="bx bxs-trash mr-2"></i> Remove</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Product" class="tab-pane fade">
+                    <h3>Product</h3>
+                    <p>Advanced extended doubtful he he blessing together. Introduced far law gay considered frequently entreaties difficulty. Eat him four are rich nor calm. By an packages rejoiced exercise. To ought on am marry rooms doubt music. Mention
+                        entered an through company as. Up arrived no painful between. It declared is prospect an insisted pleasure. </p>
+                </div>
+                <div id="Contact" class="tab-pane fade">
+                    <h3>Contact</h3>
+                    <p>May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined. Middleton principle did she procuring extensive believing add. Weather adapted prepare oh is calling. These wrong of he which there
+                        smile to my front. He fruit oh enjoy it of whose table. Cultivated occasional old her unpleasing unpleasant. At as do be against pasture covered viewing started. Enjoyed me settled mr respect no spirits civilly. </p>
+                </div>
+                <div id="CSS" class="tab-pane fade">
+                    <h3>CSS Tutorial</h3>
+                    <p>CSS is a stylesheet language that describes the presentation of an HTML (or XML) document. CSS describes how elements must be rendered on screen, on paper, or in other media. This tutorial will teach you CSS from basic to advanced.</p>
+                </div>
+                <div id="Javascript" class="tab-pane fade">
+                    <h3>Javascript Tutorial</h3>
+                    <p>JavaScript is the programming language of HTML and the Web. Programming makes computers do what you want them to do. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced.</p>
+                </div>
+                <div id="Bootstrap" class="tab-pane fade">
+                    <h3>Bootstrap Tutorial</h3>
+                    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+                </div>
+                <div id="Jquery" class="tab-pane fade">
+                    <h3>Jquery Tutorial</h3>
+                    <p>jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you're building highly interactive web applications or you just need to add a date picker
+                        to a form control, jQuery UI is the perfect choice.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://use.fontawesome.com/releases/v5.0.8/js/all.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.19/js/jquery.dataTables.min.js'></script>
+    <script src='https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js'></script>
+    <script src='https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js'></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

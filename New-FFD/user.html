@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FF Dispatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet' href='https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css'>
+    <link rel='stylesheet' href='https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css'>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+    <body class="sidebar-is-expanded">
+        <header class="l-header">
+            <div class="l-header__inner clearfix">
+                <div class="c-header-icon js-hamburger">
+                    <div class="hamburger-toggle is-opened"><span class="bar-top"></span><span class="bar-mid"></span><span class="bar-bot"></span></div>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#User" data-toggle="tab">User</a></li>
+                    <li><a href="#Groups" data-toggle="tab">Groups</a></li>
+                    <li><a href="#Categories" data-toggle="tab">Categories</a></li>
+                    <li><a href="#Locations" data-toggle="tab">Locations</a></li>
+                    <li><a href="#Brands" data-toggle="tab">Brands</a></li>
+                </ul>
+                <div class="header-icons-group">
+                    <div class="c-header-icon"><i class="fa fa-cog"></i></div>
+                    <div class="c-header-icon logout mr-3"><img src="img/profile.svg"><span class="ml-2">Logout</span></div>
+                </div>
+            </div>
+        </header>
+        <div class="l-sidebar">
+            <div class="logo">
+                <div class=""><img class="logo__txt" src="img/logo.svg"></div>
+            </div>
+            <div class="l-sidebar__content">
+                <nav class="c-menu js-menu">
+                    <ul class="u-list">
+                        <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Dashboard">
+                            <div class="c-menu__item__inner"><i class="fa fa-home"></i>
+                                <div class="c-menu-item__title"><span>Dashboard</span></div>
+                            </div>
+                        </li>
+
+                        <li class="c-menu__item has-submenu" data-toggle="tooltip" title="Product">
+                            <div class="c-menu__item__inner"><i class="far fa-chart-bar"></i>
+                                <div class="c-menu-item__title"><span>Product</span></div>
+                            </div>
+                        </li>
+                        <li class="c-menu__item has-submenu is-active" data-toggle="tooltip" title="Settings">
+                            <div class="c-menu__item__inner"><i class="fa fa-cog"></i>
+                                <div class="c-menu-item__title"><span>Settings</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+    <main class="l-main">
+        <div class="content-wrapper content-wrapper--with-bg">
+            <div class="tab-content">
+                <div id="User" class="tab-pane fade in active">
+                    <div class="main-user">
+                        <h2>Sorry, you have not added any user</h2>
+                        <div>
+                            <img class="user-img" src="img/user-empty.png" />
+                        </div>
+                        <button class="user-btn"><i class="fa fa-user-plus add"></i><a href="user-list.html">ADD NEW USER</a></button>
+                        <p class="text">Click here to add new User</p>
+                    </div>
+                </div>
+                <div id="Groups" class="tab-pane fade">
+                    <div class="main-user">
+                        <h2>Sorry, you have not yet made any groups</h2>
+                        <div>
+                            <img class="user-img" src="img/user-empty.png" />
+                        </div>
+                        <button class="user-btn"><i class="fa fa-user-plus add"></i><a href="group.html">ADD NEW GROUP</a></button>
+                        <p class="text">Click here to add new group</p>
+                    </div>
+                </div>
+                <div id="Categories" class="tab-pane fade">
+                    <div class="main-user">
+                        <h2>Sorry, you have not yet made any groups</h2>
+                        <div>
+                            <img class="user-img" src="img/user-empty.png" />
+                        </div>
+                        <button class="user-btn"><i class="fa fa-user-plus add"></i><a href="group.html">ADD NEW GROUP</a></button>
+                        <p class="text">Click here to add new group</p>
+                    </div>
+                </div>
+                <div id="Locations" class="tab-pane fade">
+                    <div class="main-user">
+                        <h2>Sorry, you have not yet made any groups</h2>
+                        <div>
+                            <img class="user-img" src="img/user-empty.png" />
+                        </div>
+                        <button class="user-btn"><i class="fa fa-user-plus add"></i><a href="group.html">ADD NEW GROUP</a></button>
+                        <p class="text">Click here to add new group</p>
+                    </div>
+                </div>
+                <div id="Brands" class="tab-pane fade">
+                    <div class="main-user">
+                        <h2>Sorry, you have not yet made any groups</h2>
+                        <div>
+                            <img class="user-img" src="img/user-empty.png" />
+                        </div>
+                        <button class="user-btn"><i class="fa fa-user-plus add"></i><a href="group.html">ADD NEW GROUP</a></button>
+                        <p class="text">Click here to add new group</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://use.fontawesome.com/releases/v5.0.8/js/all.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

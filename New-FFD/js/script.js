@@ -1,46 +1,74 @@
 let Dashboard = (() => {
-  let global = {
-    tooltipOptions: {
-      placement: "right" },
+    let global = {
+        tooltipOptions: {
+            placement: "right"
+        },
 
-    menuClass: ".c-menu" };
+        menuClass: ".c-menu"
+    };
 
 
-  let menuChangeActive = el => {
-    let hasSubmenu = $(el).hasClass("has-submenu");
-    $(global.menuClass + " .is-active").removeClass("is-active");
-    $(el).addClass("is-active");
+    let menuChangeActive = el => {
+        let hasSubmenu = $(el).hasClass("has-submenu");
+        $(global.menuClass + " .is-active").removeClass("is-active");
+        $(el).addClass("is-active");
 
-    // if (hasSubmenu) {
-    // 	$(el).find("ul").slideDown();
-    // }
-  };
+        // if (hasSubmenu) {
+        // 	$(el).find("ul").slideDown();
+        // }
+    };
 
-  let sidebarChangeWidth = () => {
-    let $menuItemsTitle = $("li .menu-item__title");
+    let sidebarChangeWidth = () => {
+        let $menuItemsTitle = $("li .menu-item__title");
 
-    $("body").toggleClass("sidebar-is-reduced sidebar-is-expanded");
-    $(".hamburger-toggle").toggleClass("is-opened");
+        $("body").toggleClass("sidebar-is-reduced sidebar-is-expanded");
+        $(".hamburger-toggle").toggleClass("is-opened");
 
-    if ($("body").hasClass("sidebar-is-expanded")) {
-      $('[data-toggle="tooltip"]').tooltip("destroy");
-    } else {
-      $('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
-    }
+        if ($("body").hasClass("sidebar-is-expanded")) {
+            $('[data-toggle="tooltip"]').tooltip("destroy");
+        } else {
+            $('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
+        }
 
-  };
+    };
 
-  return {
-    init: () => {
-      $(".js-hamburger").on("click", sidebarChangeWidth);
+    return {
+        init: () => {
+            $(".js-hamburger").on("click", sidebarChangeWidth);
 
-      $(".js-menu li").on("click", e => {
-        menuChangeActive(e.currentTarget);
-      });
+            $(".js-menu li").on("click", e => {
+                menuChangeActive(e.currentTarget);
+            });
 
-      $('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
-    } };
+            $('[data-toggle="tooltip"]').tooltip(global.tooltipOptions);
+        }
+    };
 
 })();
 
 Dashboard.init();
+$(document).ready(function() {
+    $("#example").DataTable({
+        aaSorting: [],
+        responsive: true,
+
+        columnDefs: [{
+                responsivePriority: 1,
+                targets: 0
+            },
+            {
+                responsivePriority: 2,
+                targets: -1
+            }
+        ]
+    });
+
+    $(".dataTables_filter input")
+        .attr("placeholder", "Search here...")
+        .css({
+            width: "300px",
+            display: "inline-block"
+        });
+
+    $('[data-toggle="tooltip"]').tooltip();
+});
