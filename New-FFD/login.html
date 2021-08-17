@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FF Dispatch</title>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style/auth-style.css">
+    <style>
+        input {
+            width: 90%;
+            display: block;
+        }
+        
+        @media screen and (max-width: 375px) {
+            input {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 414px) {
+            input {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 475px) {
+            input {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width: 575px) {
+            input {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body class="">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <h4 class="mt-4 mb-4 font-weight-bold">FF Dispatch</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section">
+        <div class="container">
+            <div class="row mt-2 ">
+                <div class="col-md-5">
+                    <img class="w-100 head-img" src="img/sign up.png">
+                </div>
+                <div class="col-md-7">
+                    <h1 class="signup-titl mb-4 mt-4">Login In</h1>
+                    <h2 class="signup-titleee">Account Info
+                    </h2>
+                    <div class="main w-100 mt-4 ">
+                        <form method="POST" id="signup-form" class="signup-form ml-sm-3 " enctype="multipart/form-data">
+                            <fieldset>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email ID </label>
+                                        <input type="email" name="email" id="name" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" id="name" />
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div>
+                        <a href="user.html"> <button class="btn-fontt mt-3">LOG IN</button></a>
+                        <div class="log-text">or sign in with</div>
+                        <div id="btn" class="text-center">
+                            <button type="button" class="btn btn-primary btn-circle btn-sm"><i class="fa fa-facebook"></i></button>
+                            <button type="button" class="btn btn-danger btn-circle btn-sm"><i class="fa fa-google"></i></button>
+                            <button type="button" class="btn btn-info btn-circle btn-sm"><i class="fa fa-twitter"></i></button>
+                        </div>
+                        <div class="bottom-text1 mt-3">New to FF Dispatch? <span><a href="signup.html">Sign Up</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JS -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+        <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

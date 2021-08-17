@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FF Dispatch</title>
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="style/auth-style.css">
+    <style>
+        input,
+        label,
+        textarea {
+            width: 90%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <h4 class="mt-4 mb-4 font-weight-bold">FF Dispatch</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section">
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-md-5">
+                    <img class="w-100 mobile-img" src="img/sign up.png">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="signup-title mb-sm-4">Sign Up</h2>
+                    <div class="main w-100 ">
+                        <form method="POST" id="signup-form" class="signup-form ml-3 " enctype="multipart/form-data">
+                            <h3>
+                                Personal Information
+                            </h3>
+                            <fieldset>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="text">Company Name</label>
+                                        <input type="text" name="text" id="name" />
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="form-row w-50">
+                                        <div class="form-group">
+                                            <label for="text">First Name</label>
+                                            <input type="text" name="text" id="name" />
+                                        </div>
+                                    </div>
+                                    <div class="form-row w-50 ">
+                                        <div class="form-group">
+                                            <label for="text">Last Name</label>
+                                            <input type="text" name="text" id="name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" name="email" id="email" />
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="number">Phone Number</label>
+                                        <input type="number" name="phone" id="phone" />
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <h3>
+                                Account Verification
+                            </h3>
+                            <fieldset>
+                                <div class="form-radio">
+                                    <label for="number" class=" text-center mt-4">Please enter the 6 digit code sent to your Phone Number</label>
+                                    <input type="number" class="form-control col-md-10 col-sm-6 col-sm-offset-2 mt-4  text-center" name="verifyCode" required>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div>
+                        <!-- <button class="btn-fott ">Continue</button> -->
+                        <div class="bottom-text">Already Have An Account? <span><a href="login.html">Sign In</a></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JS -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+        <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+        <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
